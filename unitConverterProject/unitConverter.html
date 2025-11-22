@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="unitConverter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main" id="mainframe">
+      <div id="first-container">
+        <h1 class="title-head" id="title-head">
+          Metric/Imperial Unit Conversion
+        </h1>
+        <input type="text" id="input-fe" />
+        <button id="convert-btn" onclick="UnitConvert()">Convert</button>
+      </div>
+
+      <div id="output-container">
+        <div class="output-box">
+          <h1 class="length-header">Length (Meter/Feet)</h1>
+          <p class="output-p" id="length-output">0.00 Feet | 0.00 Meters</p>
+        </div>
+
+        <div class="output-box">
+          <h1 class="length-header">Volume (Liters/Gallons)</h1>
+          <p class="output-p" id="vol-output">0.00 Gallons | 0.00 Liters</p>
+        </div>
+
+        <div class="output-box" id="mass-output-box">
+          <h1 class="length-header">Mass (Kilograms/Pounds)</h1>
+          <p class="output-p" id="mass-output">0.00 Pounds | 0.00 Kilograms</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="unitConverter.js"></script>
+  </body>
+</html>
